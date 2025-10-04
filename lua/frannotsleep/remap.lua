@@ -20,8 +20,11 @@ vim.keymap.set("n", "<leader>svwm", function()
 end)
 
 vim.g.mapleader = " "
+
 vim.keymap.set("n", "<leader>ff", vim.cmd.Neoformat)
 vim.keymap.set("n", "<leader>gcc", 'gcc')
+
+vim.keymap.set("n", "<C-c>", ":q<CR>")
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -40,7 +43,7 @@ vim.keymap.set("n", "<leader>svwm", function()
 end)
 
 -- copy and paste from outside
-vim.keymap.set("n", "<leader>po", [["+p]])
+vim.keymap.set({ "n", "v" }, "<leader>po", [["+p]])
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
