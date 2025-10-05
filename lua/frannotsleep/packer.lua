@@ -15,6 +15,7 @@ return require('packer').startup(function(use)
   use('sbdchd/neoformat')
   use({ 'rose-pine/neovim', as = 'rose-pine' })
   use({ "catppuccin/nvim", as = "catppuccin" })
+  use({ "ellisonleao/gruvbox.nvim", as = "gruvbox" })
   use {
       'nvim-flutter/flutter-tools.nvim',
       requires = {
